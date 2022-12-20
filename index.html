@@ -39,7 +39,7 @@
         
         <div class="slideOutNav">
             <div class="buttonContainer">
-                <button>
+                <button class="menuButton">
                     <img src="./assets/menu-close.svg" alt="close slide-out navigation">
                 </button>
             </div>
@@ -279,6 +279,16 @@
             </div> 
         </div> 
     </footer>
+<script>
+    //slide out navigation
+        //target hamburger menu icon
+            const menuButton = document.querySelector('.menuButton');
 
+                menuButton.addEventListener('click', function () {
+                    console.log('hello');
+                    menuButton.classList.toggle("active");
+
+                });
+</script>
 </body>
 </html>
